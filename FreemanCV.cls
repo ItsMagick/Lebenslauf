@@ -146,7 +146,6 @@
 %	COLORS
 %----------------------------------------------------------------------------------------
 
-\usepackage[usenames, svgnames]{xcolor} % Required for defining and using custom colors
 
 \definecolor{text}{HTML}{2b2b2b} % Main document text color, off-black
 \definecolor{headings}{HTML}{701112} % Dark red color for headings
@@ -154,6 +153,7 @@
 \definecolor{linkcolor}{HTML}{641c1d} % 25% desaturated headings color for links
 
 \color{text} % Set the default text color
+\usepackage{xcolor} % Required for defining and using custom colors
 
 %----------------------------------------------------------------------------------------
 %	LINKS
