@@ -1,0 +1,52 @@
+\documentclass[
+    10pt, % Default font size, can be between 8pt and 12pt
+]{FreemanCV}
+\columnratio{0.55, 0.45} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content
+
+% Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
+% Example right footer:
+%\rfoot{\textcolor{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+%----------------------------------------------------------------------------------------
+\begin{document}
+    \begin{paracol}{2} % Begin two-column mode
+        \parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+            \centering % Horizontally center text
+            {\sffamily\Huge Sebastian Peschke} % Your name
+            \medskip % Vertical whitespace
+            {\cursivefont\Huge\textcolor{headings}{Curriculum Vitae}}
+            \vfill % Push content to the top of the box
+        }
+        \input{english/sections/personal_data}
+%        \input{english/sections/research}
+        \input{english/sections/work}
+%        \input{english/sections/references}
+        \medskip
+        \input{english/sections/education}
+        \switchcolumn
+        \includegraphics[scale=0.1]{assets/Bewerbungsfoto}
+        \input{english/sections/skills}
+%        \input{english/sections/communication_skills}
+        \input{english/sections/persona}
+%        \input{english/sections/publications}
+    \end{paracol} % End two-column mode
+%----------------------------------------------------------------------------------------
+
+    \include{english/Bewerbungsschreiben}
+    \newpage
+    \section{Certificates and References}\label{sec:certificates-and-references}
+    \includegraphics[page=1,scale=0.17]{./assets/B_Zeugnis04}
+    \newpage
+    \includegraphics[page=2,scale=0.17]{./assets/B_Zeugnis03}
+    \newpage
+    \includegraphics[page=3,scale=0.17]{./assets/B_Zeugnis02}
+    \newpage
+    \includegraphics[page=4,scale=0.17]{./assets/B_Zeugnis}
+
+    \begin{landscape}
+        \includegraphics[scale=0.8]{./assets/SebastianPeschke-HOF_2020_I2N_HEY-certificate}
+        \newpage
+        \includegraphics[scale=0.8]{./assets/SebastianPeschke-HOF_2020_RSE_HEY-certificate}
+        \newpage
+        \includegraphics[scale=0.8]{./assets/Professional Scrum Master I}
+    \end{landscape}
+\end{document}
