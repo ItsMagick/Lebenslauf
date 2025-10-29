@@ -33,20 +33,22 @@
 
     \include{german/Bewerbungsschreiben}
     \newpage
-    \section{Certificates and References}\label{sec:certificates-and-references}
-    \includegraphics[page=1,scale=0.17]{./assets/B_Zeugnis04}
-    \newpage
-    \includegraphics[page=2,scale=0.17]{./assets/B_Zeugnis03}
-    \newpage
-    \includegraphics[page=3,scale=0.17]{./assets/B_Zeugnis02}
-    \newpage
-    \includegraphics[page=4,scale=0.17]{./assets/B_Zeugnis}
-
+    \begin{titlepage}
+        \newgeometry{top=3cm,bottom=3cm,left=2.5cm,right=2.5cm} % optional
+        \centering
+        {\textcolor{headings}{\sffamily\Huge\bfseries Certificates \\[0.5em] and References}}
+        \vfill
+        \noindent\rule{0.5\textwidth}{0.4pt}\\[1em]
+        {\Large\textcolor{lightgray}{\sffamily\MakeUppercase{Sebastian Peschke}}}
+        \vfill
+        \restoregeometry
+    \end{titlepage}
+    \includepdf[pages=-, angle=-90]{assets/Hochschule_compressed}
     \begin{landscape}
-        \includegraphics[scale=0.8]{./assets/SebastianPeschke-HOF_2020_I2N_HEY-certificate}
+        \includegraphics[scale=0.85]{./assets/SebastianPeschke-HOF_2020_I2N_HEY-certificate}
         \newpage
-        \includegraphics[scale=0.8]{./assets/SebastianPeschke-HOF_2020_RSE_HEY-certificate}
+        \includegraphics[scale=0.85]{./assets/SebastianPeschke-HOF_2020_RSE_HEY-certificate}
         \newpage
-        \includegraphics[scale=0.8]{./assets/Professional Scrum Master I}
+        \includegraphics[scale=0.9]{./assets/Professional Scrum Master I}
     \end{landscape}
 \end{document}

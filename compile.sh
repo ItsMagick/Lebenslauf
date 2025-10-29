@@ -20,8 +20,6 @@ find .\
      -iname '*.bcf' -o -iname '*.blg' -o -iname '*.lot' -o -iname '*.synctex.gz' \) \
      -exec rm -R {} +
 
-#!/bin/bash
-set -ex
 find .\
      \( -iname '*.out' -o -iname '*.toc' -o  -iname '*.log' -o -iname '*.aux' -o -iname '*.dvi' -o -iname '*.lol' -o \
      -iname '*.lof' -o -iname '*.run.xml' -o -iname '*.fdb_latexmk' -o -iname '*.fls' -o -iname '*.bbl' -o \
